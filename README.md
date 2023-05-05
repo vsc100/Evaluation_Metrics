@@ -1,5 +1,5 @@
 # Evaluation_Metrics
-This repository contains verious methods to evaluate the model performance.
+This repository contains various methods to evaluate the model performance.
 
 # sacreBLEU
 ## Installation
@@ -26,3 +26,7 @@ $ cat output.detok.txt | sacrebleu ref.detok.txt -m bleu -b -w 4
  METEOR (Metric for Evaluation of Translation with Explicit ORdering) is a machine translation evaluation metric, which is calculated based on the harmonic mean of precision and recall, with recall weighted more than precision.
 
 METEOR is based on a generalized concept of unigram matching between the machine-produced translation and human-produced reference translations. Unigrams can be matched based on their surface forms, stemmed forms, and meanings. Once all generalized unigram matches between the two strings have been found, METEOR computes a score for this matching using a combination of unigram-precision, unigram-recall, and a measure of fragmentation that is designed to directly capture how well-ordered the matched words in the machine translation are in relation to the reference.
+# N-Gram
+n-grams are Markov models that estimate words from a fixed window of previous words. n-gram probabilities can be estimated by counting in a corpus
+and normalizing (the maximum likelihood estimate). n-gram language models are evaluated extrinsically in some task, or intrinsically using perplexity. We can use these models as an evaluation metrices for our language model.
+
